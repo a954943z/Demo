@@ -1,0 +1,62 @@
+﻿<html>
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container register-form" id="app">
+        <div class="form">
+            <div class="note">
+                <p>This is a simpleRegister Form made using Boostrap.</p>
+            </div>
+
+            <div class="form-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name *" value="" v-model="registerData.name"/>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Password *" value="" v-model="registerData.password" />
+                        </div>
+                        
+                    </div>
+                </div>
+                <button type="button" class="btnSubmit" v-on:click="registerCheck">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {
+            registerData: {
+                name: "",
+                password:""
+            }
+        },
+        methods: {
+            registerCheck: function () {
+                let self = this;
+                axios.post("/Account/Register", self.registerData).then(function (res) {
+                    if (res.data == 1) {
+                        alert("註冊成功");
+                        
+                    }
+                    else {
+                        alert("失敗");
+                    }
+                }).catch(function (err) {
+                    console.log(err.data);
+                })
+            }
+        }
+    })
+    </script>

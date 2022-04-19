@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tibame_T14\\Desktop\\DEMO\\DEMO\\DEMO.csproj": {}
+    "C:\\Users\\Tibame_T14\\Documents\\GitHub\\Demo\\DEMO\\DEMO\\DEMO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tibame_T14\\Desktop\\DEMO\\DEMO\\DEMO.csproj": {
+    "C:\\Users\\Tibame_T14\\Documents\\GitHub\\Demo\\DEMO\\DEMO\\DEMO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tibame_T14\\Desktop\\DEMO\\DEMO\\DEMO.csproj",
+        "projectUniqueName": "C:\\Users\\Tibame_T14\\Documents\\GitHub\\Demo\\DEMO\\DEMO\\DEMO.csproj",
         "projectName": "DEMO",
-        "projectPath": "C:\\Users\\Tibame_T14\\Desktop\\DEMO\\DEMO\\DEMO.csproj",
+        "projectPath": "C:\\Users\\Tibame_T14\\Documents\\GitHub\\Demo\\DEMO\\DEMO\\DEMO.csproj",
         "packagesPath": "C:\\Users\\Tibame_T14\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tibame_T14\\Desktop\\DEMO\\DEMO\\obj\\",
+        "outputPath": "C:\\Users\\Tibame_T14\\Documents\\GitHub\\Demo\\DEMO\\DEMO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tibame_T14\\AppData\\Roaming\\NuGet\\NuGet.Config",
